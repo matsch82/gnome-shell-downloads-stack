@@ -1,0 +1,15 @@
+{
+  "uuid": "downloads-dock@matthias",
+  "name": "Downloads Stack for the Dock",
+  "description": "A macOS-style Downloads stack for Ubuntu Dock and Dash to Dock. The dock icon shows your newest downloads; click it for a grid or list of recent downloads with previews and live progress.",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.downloads-dock",
+  "gettext-domain": "downloads-dock",
+  "url": "https://github.com/matsch82/gnome-shell-downloads-stack",
+  "version": 1
+}

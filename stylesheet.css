@@ -1,0 +1,148 @@
+/* Downloads Stack for the Dock: macOS-flavoured styling for light and dark shell themes. */
+
+/* ---- Dock icon ---- */
+.downloads-dock-badge {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #0a84ff;
+}
+
+.downloads-dock-pulse-track {
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: 1px;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.downloads-dock-pulse-bar {
+  width: 10px;
+  border-radius: 2px;
+  background-color: #0a84ff;
+}
+
+.downloads-dock-button:checked .overview-icon {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ---- Popover ---- */
+.downloads-menu {
+  width: 380px;
+}
+
+.downloads-header {
+  padding: 4px 8px 8px 14px;
+  spacing: 6px;
+}
+
+.downloads-title {
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+.downloads-pill-button {
+  padding: 3px 12px;
+  border-radius: 99px;
+  font-size: 0.9em;
+  font-weight: bold;
+  background-color: rgba(127, 127, 127, 0.18);
+}
+
+.downloads-pill-button:hover,
+.downloads-icon-button:hover,
+.downloads-reveal-button:hover {
+  background-color: rgba(127, 127, 127, 0.30);
+}
+
+.downloads-pill-button:active,
+.downloads-icon-button:active,
+.downloads-reveal-button:active {
+  background-color: rgba(127, 127, 127, 0.42);
+}
+
+.downloads-pill-button:focus,
+.downloads-icon-button:focus,
+.downloads-reveal-button:focus {
+  box-shadow: inset 0 0 0 2px rgba(10, 132, 255, 0.75);
+}
+
+.downloads-icon-button {
+  padding: 5px;
+  border-radius: 99px;
+}
+
+.downloads-scroll {
+  max-height: 460px;
+}
+
+.downloads-list {
+  spacing: 2px;
+}
+
+/* ---- List view ---- */
+.downloads-row {
+  spacing: 10px;
+  padding: 6px 8px 6px 10px;
+  border-radius: 10px;
+}
+
+.downloads-row-text {
+  spacing: 2px;
+}
+
+.downloads-row-name {
+  font-weight: bold;
+}
+
+.downloads-row-detail {
+  font-size: 0.85em;
+}
+
+.downloads-reveal-button {
+  padding: 6px;
+  border-radius: 99px;
+}
+
+.downloads-progress-track {
+  height: 4px;
+  border-radius: 2px;
+  margin: 2px 0;
+  background-color: rgba(127, 127, 127, 0.30);
+}
+
+.downloads-progress-bar {
+  width: 56px;
+  border-radius: 2px;
+  background-color: #0a84ff;
+}
+
+/* ---- Grid view ---- */
+.downloads-grid-row {
+  spacing: 4px;
+  padding: 0 4px;
+}
+
+.downloads-tile {
+  width: 80px;
+  padding: 8px 4px;
+  spacing: 6px;
+  border-radius: 12px;
+}
+
+.downloads-tile-label {
+  font-size: 0.85em;
+}
+
+/* ---- Empty state ---- */
+.downloads-empty {
+  padding: 28px 12px 24px;
+  spacing: 10px;
+}
+
+.downloads-empty-icon {
+  icon-size: 48px;
+}
+
+.downloads-empty-label {
+  font-weight: bold;
+}

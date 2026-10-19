@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="downloads-dock">
+  <enum id="org.gnome.shell.extensions.downloads-dock.view-mode">
+    <value nick="list" value="0"/>
+    <value nick="grid" value="1"/>
+  </enum>
+  <enum id="org.gnome.shell.extensions.downloads-dock.sort-by">
+    <value nick="added" value="0"/>
+    <value nick="modified" value="1"/>
+  </enum>
+  <enum id="org.gnome.shell.extensions.downloads-dock.icon-style">
+    <value nick="stack" value="0"/>
+    <value nick="folder" value="1"/>
+  </enum>
+
+  <schema id="org.gnome.shell.extensions.downloads-dock"
+          path="/org/gnome/shell/extensions/downloads-dock/">
+    <key name="downloads-folder" type="s">
+      <default>''</default>
+      <summary>Downloads folder</summary>
+      <description>Folder to watch. Empty uses the XDG Downloads directory.</description>
+    </key>
+    <key name="max-items" type="i">
+      <range min="1" max="100"/>
+      <default>16</default>
+      <summary>Number of downloads to show</summary>
+    </key>
+    <key name="view-mode" enum="org.gnome.shell.extensions.downloads-dock.view-mode">
+      <default>'grid'</default>
+      <summary>Show downloads as a grid or as a list</summary>
+    </key>
+    <key name="sort-by" enum="org.gnome.shell.extensions.downloads-dock.sort-by">
+      <default>'added'</default>
+      <summary>Sort by date added or date modified</summary>
+    </key>
+    <key name="icon-style" enum="org.gnome.shell.extensions.downloads-dock.icon-style">
+      <default>'stack'</default>
+      <summary>Dock icon: a stack of the newest downloads, or the Downloads folder</summary>
+    </key>
+    <key name="show-hidden" type="b">
+      <default>false</default>
+      <summary>Show hidden and backup files</summary>
+    </key>
+    <key name="generate-thumbnails" type="b">
+      <default>true</default>
+      <summary>Create previews for downloads that have no thumbnail yet</summary>
+    </key>
+    <key name="show-folders" type="b">
+      <default>true</default>
+      <summary>Show folders</summary>
+    </key>
+    <key name="animate-icon" type="b">
+      <default>true</default>
+      <summary>Bounce the dock icon when a download finishes</summary>
+    </key>
+    <key name="show-badge" type="b">
+      <default>true</default>
+      <summary>Show a dot on the dock icon for downloads you have not looked at</summary>
+    </key>
+    <key name="dock-after" type="s">
+      <default>''</default>
+      <summary>Id of the dock icon the Downloads icon was dropped after</summary>
+    </key>
+    <key name="dock-before" type="s">
+      <default>''</default>
+      <summary>Id of the dock icon the Downloads icon was dropped before</summary>
+    </key>
+    <key name="dock-index" type="i">
+      <range min="-1" max="1000"/>
+      <default>-1</default>
+      <summary>Slot the Downloads icon was dropped in (-1: default, before the Trash)</summary>
+    </key>
+    <key name="clear-before" type="x">
+      <default>0</default>
+      <summary>Hide downloads added before this time (µs since epoch)</summary>
+      <description>Set by the Clear button. Files are never deleted.</description>
+    </key>
+    <key name="last-seen" type="x">
+      <default>0</default>
+      <summary>When the stack was last opened (µs since epoch)</summary>
+    </key>
+  </schema>
+</schemalist>
